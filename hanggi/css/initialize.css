@@ -1,0 +1,9 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}

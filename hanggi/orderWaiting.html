@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>주문매칭</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/orderWaiting.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/orderWaiting.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <a href="javascript:window.history.back();" id="back">
+            <img src="image/back.png" width="24" height="24" />
+        </a>
+        <h1 id="headerTitle">매칭대기</h1>
+    </div>
+    <div id="blankHeader"></div>
+    <div id="mainSection">
+        <ul id="matchingList" class="list_ul">
+            <!-- <li class="matchingRoom list_left">
+                <a href="restaurant.html?restNum=' + item.rid + '">
+                    <img src="image/lotteria.jpg" class="rstrtImg" />
+                    <div class="rstrtInfo">
+                        <h2 class="rstrtName">롯데리아</h2>
+                        <h3 class="remainTime">남은금액 5,000원</h4>
+                        <h3 class="remainPrice">남은시간 4:33</h4>
+                    </div>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>주소검색</title>
+	<!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/showLocation.css" />
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId={클라이언트ID}&submodules=geocoder"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/showLocation.js"></script>
+</head>
+<body>
+	<div id="mainHeader">
+        <a href="javascript:window.history.back();" id="back">
+            <img src="image/back.png" width="24" height="24" />
+        </a>
+        <h1 id="headerTitle">배달 받을 주소</h1>
+	</div>
+	<div id="mainSection">
+        <div id="map" class="map_style">
+            <img src="image/marker.png" id="marker" />
+        </div>
+        <div id="addrInfo">
+            <h2 class="areaAddress"></h2>
+            <h3 class="roadAddress"></h3>
+            <input type="text" id="detailAddr" name="detailAddr" placeholder="상세주소 입력 (예: N14 101호)" />
+        </div>
+        <input type="submit" id="decideAddr" value="이 주소로 배달!!" />
+	</div>
+</body>
+</html>

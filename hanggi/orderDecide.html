@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>주문결정</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/orderDecide.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/orderDecide.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <div id="headerWrap">
+            <a href="javascript:window.history.back();" id="back">
+                <img src="image/back.png" width="24" height="24" />
+            </a>
+            <h1 id="headerTitle">주문결제</h1>
+        </div>
+        <div id="blankHeader"></div>
+    </div>
+    <div id="mainSection">
+        <div id="deliveryInfoWrap">
+            <div id="deliveryInfo">
+                <h1 id="delInfoTitle">배달정보</h1>
+                <h2 id="delAddr"></h2>
+                <h4 id="delRoadAddr"></h3>
+                <input type="text" id="phone" placeholder="휴대폰번호를 입력하세요" />
+                <input type="text" id="require" placeholder="요청사항을 입력하세요" maxlength="40" />
+                <ul class="list_ul">
+                    <li class="list_left" id="inputLength">0</li>
+                    <li class="list_left">/</li>
+                    <li class="list_left" id="remain">40</li>
+                </ul>
+            </div>
+        </div>
+        <div id="waitingTimeInfoWrap">
+            <div id="waitingTimeInfo">
+                <h1 id="wTimeInfoTitle">대기시간</h1>
+                <ul class="list_ul">
+                    <li class="list_left wTime">3</li>
+                    <li class="list_left wTime">5</li>
+                    <li class="list_left wTime">7</li>
+                    <li class="list_left wTime">10</li>
+                    <li class="list_left wTime">20</li>
+                    <li class="list_left wTime">30</li>
+                    <li class="list_left wTime">60</li>
+                </ul>
+                <input type="hidden" id="waitingTime" />
+            </div>
+        </div>
+        <div id="paymentInfoWrap">
+            <div id="paymentInfo">
+                <h1 id="payInfoTitle">결제정보</h1>
+                <h2 id="paymentPrice"></h2>
+                <h4 id="detailPrice"></h4>
+                <h3 id="paymentOption">현장결제</h3>
+                <p>※ 다른 결제방식은 준비중입니다. 이전까지는 현장결제방식만 제공됩니다.</p>
+            </div>
+        </div>
+        <div id="payment">주문완료</div>
+    </div>
+</body>
+</html>

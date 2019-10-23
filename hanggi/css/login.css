@@ -1,0 +1,68 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 99;
+}
+#back {
+	width: 16px;
+	height: 16px;
+	padding: 7px;
+	display: block;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+}
+#back > img {
+	display: block;
+	margin: 0 auto;
+}
+
+/*메인섹션*/
+#IDPWBox {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+#IDPWBox > input {
+	width: 100%;
+	height: 24px;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 14px;
+	border: 0px;
+}
+#IDPWBox > input[type=text] {
+	border-bottom: 1px solid rgb(220, 220, 200);
+}
+#IDPWBox > input[type=text]:focus {
+	border-bottom: 1px solid rgb(255, 111, 64);
+}
+#IDPWBox > input[type=button] {
+	height: 40px;
+	color: white;
+	font-weight: bolder;
+	background-color: rgb(255, 111, 64);
+}
+#subLoginInfo {
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+#subLoginInfo > a {
+	color: rgb(150, 150, 130);
+}
+#forgetPW {
+	margin-right: 20px;
+}

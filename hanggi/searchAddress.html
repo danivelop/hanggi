@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>주소검색</title>
+	<!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/searchAddress.css" />
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId={클라이언트ID}&submodules=geocoder"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/searchAddress.js"></script>
+</head>
+<body>
+	<div id="bg"></div>
+	<div id="mainHeader">
+		<a href="javascript:window.history.back();" id="cancle">
+			<img src="image/cancle.png" width="16" height="16" />
+		</a>
+		<h1 id="headerTitle">배달 받을 주소</h1>
+		<div id="searchAddBox" class="list_ul">
+			<input id="searchAdd" type="text" class="list_left" placeholder="   지번, 도로명, 건물명으로 검색" />
+			<div id="findCurLoc" class="list_right">
+				<img src="image/location.png" />
+			</div>
+		</div>
+	</div>
+	<div id="mainSection">
+		<div id="recentAdd" class="showAdd">
+			<h2 class="conTitle">최근 주소</h2>
+			<ul id="latestAdd" class="listAdd">
+			</ul>
+		</div>
+		<div id="searchResult" class="showAdd">
+			<h2 class="conTitle">주소 검색 결과</h2>
+			<ul id="resultAdd" class="listAdd"></ul>
+		</div>
+	</div>
+</body>
+</html>

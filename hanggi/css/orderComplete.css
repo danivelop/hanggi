@@ -1,0 +1,101 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+	background-color: white;
+	position: relative;
+	z-index: 99;
+}
+#back {
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
+}
+#headerTitle {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+	background-color: rgb(240, 240, 230);
+}
+#orderResult {
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	line-height: 150px;
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: white;
+	border-bottom: 1px solid rgb(210, 210, 200);
+}
+.orderDetailList {
+	width: 100%;
+	margin: 10px 0;
+	background-color: white;
+}
+.rName {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.orderDetail {
+	width: 100%;
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+.orderDetailTitle {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+.orderDetailitem {
+	width: 100%;
+	padding: 15px 0;
+	font-size: 14px;
+	border-bottom: 1px solid rgb(230, 230, 210);
+}
+.address {
+	width: 70%;
+	text-align: right;
+}
+.require {
+	width: 70%;
+	text-align: right;
+}
+.orderMenu {
+	width: 100%;
+	padding: 15px 0;
+	font-size: 14px;
+	border-bottom: 1px solid rgb(230, 230, 210);
+}
+.menuInfo {
+	margin-bottom: 10px;
+}
+.orderMenu .menuInfo:last-of-type {
+	margin-bottom: 0px;
+}
+.optionInfo {
+	text-align: right;
+	clear: both;
+}

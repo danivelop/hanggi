@@ -1,0 +1,46 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	z-index: 99;
+}
+#back {
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
+}
+#headerTitle {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+#titles {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+}
+#mainTitle {
+	font-size: 24px;
+}

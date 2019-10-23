@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>로그인</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <a href="javascript:window.history.back();" id="back">
+            <img src="image/cancle.png" width="16" height="16" />
+        </a>
+    </div>
+    <div id="mainSection">
+        <div id="IDPWBox">
+            <input type="text" id="id" placeholder="아이디 또는 이메일" />
+            <input type="text" id="pw" placeholder="비밀번호" />
+            <input type="button" id="login" value="로그인" />
+            <ul id="subLoginInfo" class="list_ul">
+                <a href="#" id="forgetPW">아이디/비밀번호 찾기</a>
+                <a href="signIn.html" id="signIn">회원가입</a>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>식당리스트</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/restaurantList.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/restaurantList.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <a href="javascript:window.history.back();" id="back">
+            <img src="image/back.png" width="24" height="24" />
+        </a>
+        <h1 id="headerTitle"></h1>
+    </div>
+    <div id="mainSection">
+        <div id="textSliderWrap">
+            <div id="textSlider">
+                <ul class="list_ul">
+                    <li class="list_left menuTitle">한식</li>
+                    <li class="list_left menuTitle">분식</li>
+                    <li class="list_left menuTitle">돈까스</li>
+                    <li class="list_left menuTitle">중국집</li>
+                    <li class="list_left menuTitle">야식</li>
+                    <li class="list_left menuTitle">찜·탕</li>
+                </ul>
+                <div id="menuTitleUnderBar"></div>
+            </div>
+        </div>
+        <div id="sliderWrap">
+            <div id="menuSlider">
+                <div id="koreanfood" class="menu">
+                    <div class="blankBar"></div>
+                    <ul id="list1" class="restaurantList">
+                        <!-- <li class="restaurant">
+                            <a href="restaurant.html?restNum=' + item.rid + '">
+                                <img src="image/lotteria.jpg" class="rstrtImg" />
+                                <div class="rstrtInfo">
+                                    <h2 class="rstrtName">롯데리아</h2>
+                                    <h3 class="rstrtGrade">평점 4.2 / 리뷰 32</h3>
+                                    <h4 class="rstrtKeyword">#불고기버거 #토네이도</h4>
+                                </div>
+                                <img src="image/arrow.png" class="rstrtArrow" />
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div id="snack" class="menu">
+                    <div class="blankBar"></div>
+                    <ul id="list2" class="restaurantList"></ul>
+                </div>
+                <div id="westernfood" class="menu">
+                    <div class="blankBar"></div>
+                    <ul id="list3" class="restaurantList">
+                    </ul>
+                </div>
+                <div id="chinesefood" class="menu">
+                    <div class="blankBar"></div>
+                    <ul id="list4" class="restaurantList">
+                    </ul>
+                </div>
+                <div id="midnightsnack" class="menu">
+                    <div class="blankBar"></div>
+                    <ul id="list5" class="restaurantList">
+                    </ul>
+                </div>
+                <div id="steameddish" class="menu">
+                    <div class="blankBar"></div>
+                    <ul id="list6" class="restaurantList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="orderStatus.html" id="orderStatus">주</a>
+    </div>
+</body>
+</html>

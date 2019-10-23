@@ -1,0 +1,224 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+body {
+	position: relative;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+}
+#mainNavBtn {
+	width: 24px;
+	height: 24px;
+	padding: 13px;
+	display: block;
+}
+#headerTitle {
+	height: 50px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*네비게이션*/
+#mainNav {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: scroll;
+	background-color: rgba(0, 0, 0, 0.0);
+	visibility: hidden;
+	transition-duration: 0.3s;
+	z-index: 99;
+}
+#mainNavWrap {
+	width: 80%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: -80vw;
+	background-color: white;
+	transition-duration: 0.3s;
+}
+/* #loginItems {
+	margin: 10px 0;
+}
+.loginItem {
+	margin-right: 10px;
+	border: 1px solid black;
+}
+.loginItem > a {
+	padding: 5px 10px;
+	display: block;
+	font-size: 16px;
+} */
+#login {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	display: block;
+	color: white;
+	font-size: 16px;
+	font-weight: bolder;
+	background-color: rgb(255, 111, 64);
+}
+.navItem {
+	width: 33.33%;
+	text-align: center;
+	box-sizing: border-box;
+}
+.navItem > a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.navItem:nth-of-type(1) {
+	border-top: 1px solid rgb(220, 220, 200);
+	border-bottom: 1px solid rgb(220, 220, 200);
+}
+.navItem:nth-of-type(2) {
+	border: 1px solid rgb(220, 220, 200);
+}
+.navItem:nth-of-type(3) {
+	border-top: 1px solid rgb(220, 220, 200);
+	border-bottom: 1px solid rgb(220, 220, 200);
+}
+.navItem:nth-of-type(4) {
+	border-bottom: 1px solid rgb(220, 220, 200);
+}
+.navItem:nth-of-type(5) {
+	border: 1px solid rgb(220, 220, 200);
+	border-top: 0px;
+}
+.navItem:nth-of-type(6) {
+	border-bottom: 1px solid rgb(220, 220, 200);
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+}
+
+/*현재 주문현황*/
+#currentOrder {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	border-top: 1px solid rgb(200, 200, 200);
+	border-bottom: 1px solid rgb(200, 200, 200);
+	z-index: 10;
+}
+#matchingList {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+.matchingRoom {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.matchingRoom:last-of-type {
+	margin-bottom: 15px;
+}
+.matchingRoom > a {
+	width: 100%;
+	height: 100%;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	background-color: white;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 20px;
+}
+.rstrtImg {
+	width: 58px;
+	height: 58px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 25px;
+}
+.rstrtInfo {
+	width: 100%;
+	padding-left: 68px;
+	box-sizing: border-box;
+}
+.rstrtName {
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.remainTime {
+	margin-top: 2px;
+	margin-right: 10px;
+	font-size: 12px;
+	color: rgb(180, 180, 180);
+	text-align: right;
+}
+.remainPrice {
+	margin-top: 8px;
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight: bolder;
+	text-align: right;
+}
+#orderWaiting {
+	width: 100%;
+	height: 16px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 8px;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+	line-height: 16px;
+	background-color: rgb(255, 111, 64);
+}
+
+/*음식메뉴*/
+#menu {
+	width: 100%;
+}
+#menu > ul {
+	width: 100%;
+}
+#menu > ul > li {
+	width: 33.33%;
+}
+#menu > ul > li > a {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	display: block;
+	box-sizing: border-box;
+}
+.menuImg {
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	margin-top: 15%;
+	margin-bottom: 10%;
+	display: block;
+}
+.menuTitle {
+	font-size: 14px;
+	text-align: center;
+}

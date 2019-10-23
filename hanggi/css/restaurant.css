@@ -1,0 +1,418 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+body {
+	position: relative;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+}
+#headerWrap {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background-color: white;
+	z-index: 99;
+}
+#back {
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
+}
+#headerTitle {
+	text-align: center;
+	line-height: 50px;
+	color: rgba(0, 0, 0, 0);
+	transition-duration: 0.3s;
+}
+#headerInfo {
+	width: 100%;
+	padding-top: 52px;
+	padding-bottom: 20px;
+}
+.rstrtImg {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 100px;
+}
+#rstrtInfo {
+	width: 100%;
+	padding: 0 30px;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+#rstrtName {
+	font-size: 22px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#rstrtGrade {
+	font-size: 14px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#underLine {
+	width: 100%;
+	height: 1px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	background-color: rgb(220, 220, 220);
+}
+#payment {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+#paymentInfo {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+#favorites {
+	width: 180px;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid rgb(170, 170, 170);
+	border-radius: 5px;
+}
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+	position: relative;
+}
+
+/*네비게이션*/
+#mainNav {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+	z-index: 99;
+}
+#blankNav {
+	width: 100%;
+}
+#mainNav > ul {
+	width: 100%;
+}
+.itemTitle {
+	width: 33.33%;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 40px;
+}
+#underBar {
+	width: 33.33%;
+	height: 5px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	box-sizing: border-box;
+	border-left: 30px solid white;
+	border-right: 30px solid white;
+	background-color: black;
+	transition-duration: 0.3s;
+}
+
+/*메뉴항목*/
+.menuTitle {
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-weight: bolder;
+	background-color: rgb(220, 220, 220);
+}
+#mainMenu {
+	width: 100%;
+}
+#mainMenu > ul {
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+#mainMenu > ul > li {
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.menu_main {
+	width: 100%;
+	position: relative;
+	border: 1px solid rgb(235, 235, 235);
+	border-radius: 10px;
+}
+.menu_main_img {
+	width: 100%;
+	height: 65%;
+}
+.menu_main_info {
+	width: 100%;
+	position: absolute;
+	top: 82.5%;
+}
+.menu_main_name {
+	margin-bottom: 5px;
+	font-size: 16px;
+	text-align: center;
+}
+.menu_main_price {
+	font-size: 14px;
+	text-align: center;
+}
+.menus {
+	width: 100%;
+}
+.menus > ul {
+	width: 100%;
+}
+.menu_sub {
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+.menus > ul > li:last-of-type {
+	border-bottom: 0px;
+}
+.menu_sub_name {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.menu_sub_info {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.menu_sub_price {
+	font-size: 16px;
+}
+
+/*식당정보*/
+.info {
+	width: 100%;
+	padding: 20px 20px;
+}
+.info > ul > li {
+	margin-bottom: 10px;
+}
+.info > ul > li:last-of-type {
+	margin-bottom: 0px;
+}
+.infoTitle {
+	font-size: 16px;
+	font-weight: bolder;
+	margin-bottom: 15px;
+}
+.resIntro {
+	width: 100%;
+	font-size: 14px;
+	line-height: 20px;
+}
+.infoConTitle {
+	width: 20%;
+	font-size: 14px;
+	line-height: 20px;
+}
+.infoCon {
+	width: 80%;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/*주문현황*/
+#orderStatusBtn {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgb(255, 111, 64);
+}
+#orderStatusBtn > a {
+	width: 100%;
+	height: 50px;
+	display: block;
+	font-size: 16px;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 50px;
+}
+/* #orderBlankBar {
+	width: 100%;
+	height: 50px;
+} */
+
+/*옵션선택창*/
+#selectOptionWrap {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	display: none;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 999;
+}
+#selectOption {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	background-color: white;
+}
+#optionBack {
+	width: 24px;
+	height: 24px;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+}
+#optionBack > img {
+	width: 24px;
+	height: 24px;
+}
+.optionImg {
+	width: 150px;
+	height: 120px;
+	margin: 0 auto;
+	margin-top: 30px;
+	display: block;
+}
+#menuInfo {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+.menuName {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.menuDesc {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.menuPrice {
+	font-size: 24px;
+	font-weight: bolder;
+}
+#optionInfo {
+	width: 90%;
+	margin: 0 auto;
+}
+.optionType {
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+.optionTitle {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.option {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.option:last-of-type {
+	margin-bottom: 0px;
+}
+.option > input {
+	float: left;
+}
+.option > label {
+	font-size: 16px;
+	float: left;
+}
+.option > .optionPrice {
+	font-size: 16px;
+	float: right;
+}
+#quantityBox {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#quantityTitle {
+	font-size: 16px;
+	font-weight: bolder;
+	line-height: 34px;
+}
+#quantityBox > ul {
+	height: 34px;
+	border: 1px solid rgb(200, 200, 200);
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+#minus {
+	width: 34px;
+	height: 34px;
+}
+#quantity {
+	width: 48px;
+	height: 34px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+	background-color: white;
+	border: 0;
+	border-right: 1px solid rgb(200, 200, 200);
+	border-left: 1px solid rgb(200, 200, 200);
+}
+#plus {
+	width: 34px;
+	height: 34px;
+}
+#totalPriceWrap {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+#totalpriceTitle {
+	font-size: 20px;
+	font-weight: bolder;
+}
+#totalPriceText {
+	font-size: 16px;
+}
+#includeMenu {
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	background-color: rgb(255, 111, 64);
+}
+#blankIncludeMenu {
+	width: 100%;
+	height: 50px;
+	margin-top: 30px;
+}

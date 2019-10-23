@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>식당</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/restaurant.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <div id="headerWrap">
+            <a href="javascript:window.history.back();" id="back">
+                <img src="image/back.png" width="24" height="24" />
+            </a>
+            <h1 id="headerTitle"></h1>
+        </div>
+        <div id="headerInfo">
+            <img class="rstrtImg" />
+            <div id="rstrtInfo">
+            </div>
+        </div>
+    </div>
+    <div id="mainSection">
+        <div id="mainNav">
+            <ul class="list_ul">
+                <li class="list_left itemTitle">메뉴</li>
+                <li class="list_left itemTitle">리뷰</li>
+                <li class="list_left itemTitle">정보</li>
+            </ul>
+            <div id="underBar"></div>
+        </div>
+        <div id="blankNav"></div>
+        <div id="sliderWrap">
+            <div id="itemSlider">
+                <div id="menuItem" class="item">
+                    <div class="menuTitle">대표메뉴</div>
+                    <div id="mainMenu">
+                        <ul class="list_ul">
+                            <!-- <li class="list_left">
+                                <div class="menu menu_main" data-index="1" data-option="true" data-menuName="김치찌개" data-menuDesc="공기밥 + 김치찌개 + 밑반찬" data-menuPrice="7000">
+                                    <img src="image/kimchistew.jpg" class="menu_main_img" />
+                                    <div class="menu_main_info">
+                                        <p class="menu_main_name">김치찌개</p>
+                                        <p class="menu_main_price">7,000원</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list_left">
+                                <div class="menu menu_main" data-index="2" data-option="false" data-menuName="된장찌개" data-menuDesc="공기밥 + 된장찌개" data-menuPrice="5000">
+                                    <img src="image/soybeanstew.jpg" class="menu_main_img" />
+                                    <div class="menu_main_info">
+                                        <p class="menu_main_name">된장찌개</p>
+                                        <p class="menu_main_price">5,000원</p>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- <div class="menuTitle">찌개</div>
+                    <div id="subMenu1" class="menus">
+                        <ul>
+                            <li class="menu menu_sub" data-index="1" data-option="true" data-menuName="김치찌개" data-menuDesc="공기밥 + 김치찌개 + 밑반찬" data-menuPrice="7000">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                            <li class="menu menu_sub" data-index="2" data-option="false" data-menuName="된장찌개" data-menuDesc="공기밥 + 된장찌개" data-menuPrice="5000">
+                                <p class="menu_sub_name">된장찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 된장찌개</p>
+                                <p class="menu_sub_price">5,000원</p>
+                            </li>
+                            <li class="menu menu_sub" data-option="false">
+                                <p class="menu_sub_name">된장찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 된장찌개</p>
+                                <p class="menu_sub_price">5,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuTitle">탕</div>
+                    <div id="subMenu2" class="menus">
+                        <ul>
+                            <li class="menu menu_sub">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                            <li class="menu menu_sub">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                            <li class="menu menu_sub">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuTitle">사이드메뉴</div>
+                    <div id="subMenu3" class="menus">
+                        <ul>
+                            <li class="menu menu_sub">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                            <li class="menu menu_sub">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                            <li class="menu menu_sub">
+                                <p class="menu_sub_name">김치찌개</p>
+                                <p class="menu_sub_info">- 공기밥 + 김치찌개 + 밑반찬</p>
+                                <p class="menu_sub_price">7,000원</p>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div id="reviewItem" class="item">
+                    <h1>리뷰</h1>
+                </div>
+                <div id="infoItem" class="item">
+                    <div class="info">
+                        <h5 class="infoTitle">가게 소개</h5>
+                        <h6 class="resIntro">
+                            신전떡볶이 충북대점입니다.<br />
+                            최선을 다하여 고객님의 입맛에 맞추고자<br />
+                            노력하고 있습니다.<br />
+                            부족하거나 미흡한게 있으시다면 바로바로<br />
+                            개선하여 만족하실수 있게 노력하겠습니다.<br />
+                            많은 이용부탁드립니다.<br />
+                        </h6>
+                    </div>
+                    <div class="info">
+                        <h5 class="infoTitle">가게 통계</h5>
+                        <ul>
+                            <li>
+                                <ul class="list_ul">
+                                    <li class="list_left infoConTitle">주문수</li>
+                                    <li class="list_left infoCon">4,195</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list_ul">
+                                    <li class="list_left infoConTitle">찜</li>
+                                    <li class="list_left infoCon">183</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h5 class="infoTitle">안내 및 혜택</h5>
+                        <ul>
+                            <li>
+                                <ul class="list_ul">
+                                    <li class="list_left infoConTitle">안내</li>
+                                    <li class="list_left infoCon">-사직동은 배달료 1,000원 추가됩니다.<br />(바로결제시 배달료는 현장에서 추가<br />현금결제 부탁드립니다.)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h5 class="infoTitle">영업정보</h5>
+                        <ul>
+                            <li>
+                                <ul class="list_ul">
+                                    <li class="list_left infoConTitle">배달시간</li>
+                                    <li class="list_left infoCon">평일 - 오전 11:00 ~ 오후 9:30<br />토요일,일요일 - 오전 11:00 ~ 오후 9:00</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list_ul">
+                                    <li class="list_left infoConTitle">휴무일</li>
+                                    <li class="list_left infoCon">매주 금요일</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list_ul">
+                                    <li class="list_left infoConTitle">전화번호</li>
+                                    <li class="list_left infoCon">050-4821-1155</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="orderStatusBtn"><a href="orderStatus.html">주문현황</a></div>
+        <!-- <div id="orderBlankBar"></div> -->
+    </div>
+    <div id="selectOptionWrap">
+        <div id="selectOption">
+            <img src="image/cancleThin.png" id="optionBack" />
+            <img src="image/lotteria.jpg" class="optionImg" />
+            <div id="menuInfo">
+                <p class="menuName"></p>
+                <p class="menuDesc"></p>
+                <p class="menuPrice"></p>
+            </div>
+            <div id="optionInfo">
+                <!-- <div class="optionType" data-index="1">
+                    <h5 class="optionTitle">맛 선택</h5>
+                    <ul>
+                        <li class="option">
+                            <input id="1" class="optionBox" type="radio" name="1" data-price="0" checked="checked" />
+                            <label for="1">기본맛</label>
+                            <h6 class="optionPrice">+0원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="2" class="optionBox" type="radio" name="1" data-price="0" />
+                            <label for="2">중간맛</label>
+                            <h6 class="optionPrice">+0원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="3" class="optionBox" type="radio" name="1" data-price="0" />
+                            <label for="3">매운맛</label>
+                            <h6 class="optionPrice">+0원</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="optionType" data-index="2">
+                    <h5 class="optionTitle">토핑 추가선택</h5>
+                    <ul>
+                        <li class="option">
+                            <input id="4" class="optionBox" type="checkbox" data-price="3000" />
+                            <label for="4">치즈 추가</label>
+                            <h6 class="optionPrice">+3,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="5" class="optionBox" type="checkbox" data-price="2000" />
+                            <label for="5">생우동사리 추가</label>
+                            <h6 class="optionPrice">+2,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="6" class="optionBox" type="checkbox" data-price="2000" />
+                            <label for="6">당면 추가</label>
+                            <h6 class="optionPrice">+2,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="7" class="optionBox" type="checkbox" data-price="2000" />
+                            <label for="7">주먹밥 추가</label>
+                            <h6 class="optionPrice">+2,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="8" class="optionBox" type="checkbox" data-price="2000" />
+                            <label for="8">계란찜 추가</label>
+                            <h6 class="optionPrice">+2,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="9" class="optionBox" type="checkbox" data-price="1000" />
+                            <label for="9">떡사리 추가</label>
+                            <h6 class="optionPrice">+1,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="10" class="optionBox" type="checkbox" data-price="1000" />
+                            <label for="10">계란2개 추가</label>
+                            <h6 class="optionPrice">+1,000원</h6>
+                        </li>
+                        <li class="option">
+                            <input id="11" class="optionBox" type="checkbox" data-price="1000" />
+                            <label for="11">소세지 추가</label>
+                            <h6 class="optionPrice">+1,000원</h6>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+            <div id="quantityBox">
+                <span id="quantityTitle">수량</span>
+                <ul class="list_ul list_right">
+                    <li class="list_left">
+                        <img id="minus" src="image/minus.png" />
+                    </li>
+                    <li class="list_left">
+                        <input type="number" id="quantity" value="1" disabled />
+                    </li>
+                    <li class="list_left">
+                        <img id="plus" src="image/plus.png" />
+                    </li>
+                </ul>
+            </div>
+            <div id="totalPriceWrap">
+                <p id="totalpriceTitle">총 주문 금액</p>
+                <p id="totalPriceText"></p>
+                <input type="hidden" id="totalPrice" />
+            </div>
+            <div id="includeMenu">장바구니에 담기</div>
+            <div id="blankIncludeMenu"></div>
+        </div>
+    </div>
+</body>
+</html>

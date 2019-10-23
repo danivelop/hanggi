@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>초기화</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/orderMatched.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/orderMatched.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <a href="javascript:window.history.back();" id="back">
+            <img src="image/back.png" width="24" height="24" />
+        </a>
+        <h1 id="headerTitle">주문매칭</h1>
+    </div>
+    <div id="mainSection">
+        <h2 id="orderResult">주문이 매칭되었습니다</h2>
+        <div class="orderDetailList">
+            <h3 class="rName">불향 낙지볶음</h3>
+            <div class="orderDetail">
+                <h4 class="orderDetailTitle">주문정보</h4>
+                <ul>
+                    <li class="orderDetailitem list_ul">
+                        <h5 class="list_left">주문시간</h5>
+                        <h5 class="list_right currentTime"></h5>
+                    </li>
+                    <li class="orderDetailitem list_ul">
+                        <h5 class="list_left">주문방법</h5>
+                        <h5 class="list_right payment">현장결제</h5>
+                    </li>
+                    <li class="orderDetailitem list_ul">
+                        <h5 class="list_left">주문금액</h5>
+                        <h5 class="list_right totalPrice"></h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="orderDetail">
+                <h4 class="orderDetailTitle">배달정보</h4>
+                <ul>
+                    <li class="orderDetailitem list_ul">
+                        <h5 class="list_left">연락처</h5>
+                        <h5 class="list_right phone"></h5>
+                    </li>
+                    <li class="orderDetailitem list_ul">
+                        <h5 class="list_left">배달주소</h5>
+                        <h5 class="list_right address"></h5>
+                    </li>
+                    <li class="orderDetailitem list_ul">
+                        <h5 class="list_left">요청사항</h5>
+                        <h5 class="list_right require"></h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="orderDetail">
+                <h4 class="orderDetailTitle">주문내역</h4>
+                <ul id="menuList">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

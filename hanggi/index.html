@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>메인화면</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <ul class="list_ul">
+            <li class="list_left">
+                <a href="#" id="mainNavBtn">
+                    <img src="image/navigation.png" width="24" height="24" />
+                </a>
+            </li>
+            <li class="list_left">
+                <a href="searchAddress.html" id="headerTitle">
+                    <h1></h1>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="mainNav">
+        <div id="mainNavWrap">
+            <!-- <div id="loginItems">
+                <ul class="list_ul">
+                    <li class="list_left loginItem" id="login"><a href="login.html">로그인</a></li>
+                    <li class="list_left loginItem" id="signUp"><a href="#">회원가입</a></li>
+                </ul>
+            </div> -->
+            <a href="login.html" id="login">로그인</a>
+            <ul id="navItems" class="list_ul">
+                <li class="list_left navItem"><a href="orderStatus.html">장바구니</a></li>
+                <li class="list_left navItem"><a href="myWaitingOrder.html">내대기주문</a></li>
+                <li class="list_left navItem"><a href="managingReview.html">리뷰관리</a></li>
+                <li class="list_left navItem"><a href="orderRecode.html">주문내역</a></li>
+                <li class="list_left navItem"><a href="notice.html">공지사항</a></li>
+                <li class="list_left navItem"><a href="setting.html">환경설정</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mainSection">
+        <div id="currentOrder">
+            <ul id="matchingList" class="list_ul">
+                <!-- <li class="matchingRoom list_left">
+                    <a href="restaurant.html?restNum=' + item.rid + '">
+                        <img src="image/lotteria.jpg" class="rstrtImg" />
+                        <div class="rstrtInfo">
+                            <h2 class="rstrtName">롯데리아</h2>
+                            <h3 class="remainTime">남은금액 5,000원</h4>
+                            <h3 class="remainPrice">남은시간 4:33</h4>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+            <a href="orderWaiting.html" id="orderWaiting">더보기</a>
+        </div>
+        <div id="menu">
+            <ul class="list_ul">
+                <li class="list_left">
+                    <a href="restaurantList.html?foodType=0">
+                        <img src="image/koreanFood.png" class="menuImg" />
+                        <h1 class="menuTitle">한식</h1>
+                    </a>
+                </li>
+                <li class="list_left">
+                    <a href="restaurantList.html?foodType=1">
+                        <img src="image/snack.png" class="menuImg" />
+                        <h1 class="menuTitle">분식</h1>
+                    </a>
+                </li>
+                <li class="list_left">
+                    <a href="restaurantList.html?foodType=2">
+                        <img src="image/cutlet.png" class="menuImg" />
+                        <h1 class="menuTitle">돈까스</h1>
+                    </a>
+                </li>
+                <li class="list_left">
+                    <a href="restaurantList.html?foodType=3">
+                        <img src="image/chineseFood.png" class="menuImg" />
+                        <h1 class="menuTitle">중국집</h1>
+                    </a>
+                </li>
+                <li class="list_left">
+                    <a href="restaurantList.html?foodType=4">
+                        <img src="image/nightFood.png" class="menuImg" />
+                        <h1 class="menuTitle">야식</h1>
+                    </a>
+                </li>
+                <li class="list_left">
+                    <a href="restaurantList.html?foodType=5">
+                        <img src="image/soup.png" class="menuImg" />
+                        <h1 class="menuTitle">찜·탕</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

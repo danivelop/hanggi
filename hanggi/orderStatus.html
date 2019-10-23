@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>주문현황</title>
+    <!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes"/>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/initialization.css" />
+    <link rel="stylesheet" href="css/orderStatus.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/commonCode.js"></script>
+    <script src="js/orderStatus.js"></script>
+</head>
+<body>
+    <div id="mainHeader">
+        <a href="javascript:window.history.back();" id="back">
+            <img src="image/back.png" width="24" height="24" />
+        </a>
+        <h1 id="headerTitle">주문현황</h1>
+    </div>
+    <div id="mainSection">
+        <div id="restaurantName"></div>
+        <div id="menus">
+            <!-- <div class="menu">
+                <h2 class="menuName">미니 오뎅탕</h2>
+                <ul class="menuPrice">
+                    <li>
+                        <h3 class="priceTitle">가격</h3>
+                        <h3 class="priceInfo">5,000원</h3>
+                    </li>
+                </ul>
+                <div class="quantityBox">
+                    <span class="quantityTitle">수량</span>
+                    <ul class="list_ul list_right">
+                        <li class="list_left">
+                            <img class="minus" src="image/minus.png" />
+                        </li>
+                        <li class="list_left">
+                            <input type="number" class="quantity" value="1" disabled />
+                        </li>
+                        <li class="list_left">
+                            <img class="plus" src="image/plus.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="opTotalPriceWrap">
+                    <h3 class="opTPTitle">소계</h3>
+                    <h3 class="opTP">5,000원</h3>
+                </div>
+            </div>
+            <div class="menu">
+                <h2 class="menuName">치즈불닭떡볶이</h2>
+                <ul class="menuPrice">
+                    <li>
+                        <h3 class="priceTitle">가격</h3>
+                        <h3 class="priceInfo">12,000원</h3>
+                    </li>
+                </ul>
+                <ul class="menuOption">
+                    <li>
+                        <h3 class="optionTitle">맛 선택</h3>
+                        <h3 class="optionPrice">+0원</h3>
+                        <div class="optionInfo">
+                            <h4 class="optionInfo">(매운맛)</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="optionTitle">토핑 추가선택</h3>
+                        <h3 class="optionPrice">+4,000원</h3>
+                        <div class="optionInfo">
+                            <h4>(비엔나소세지(10개))</h4>
+                            <h4>(메추리알 추가)</h4>
+                        </div>
+                    </li>
+                </ul>
+                <div class="quantityBox">
+                    <span class="quantityTitle">수량</span>
+                    <ul class="list_ul list_right">
+                        <li class="list_left">
+                            <img class="minus" src="image/minus.png" />
+                        </li>
+                        <li class="list_left">
+                            <input type="number" class="quantity" value="1" disabled />
+                        </li>
+                        <li class="list_left">
+                            <img class="plus" src="image/plus.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="opTotalPriceWrap">
+                    <h3 class="opTPTitle">소계</h3>
+                    <h3 class="opTP">16,000원</h3>
+                </div>
+            </div>
+            <div class="menu">
+                <h2 class="menuName">치즈불닭떡볶이</h2>
+                <ul class="menuPrice">
+                    <li>
+                        <h3 class="priceTitle">가격</h3>
+                        <h3 class="priceInfo">12,000원</h3>
+                    </li>
+                </ul>
+                <ul class="menuOption">
+                    <li>
+                        <h3 class="optionTitle">매운맛 선택</h3>
+                        <h3 class="optionPrice">+0원</h3>
+                        <div class="optionInfo">
+                            <h4 class="optionInfo">(매운맛)</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="optionTitle">토핑 추가선택</h3>
+                        <h3 class="optionPrice">+4,000원</h3>
+                        <div class="optionInfo">
+                            <h4>(비엔나소세지(10개))</h4>
+                            <h4>(메추리알 추가)</h4>
+                        </div>
+                    </li>
+                </ul>
+                <div class="quantityBox">
+                    <span class="quantityTitle">수량</span>
+                    <ul class="list_ul list_right">
+                        <li class="list_left">
+                            <img class="minus" src="image/minus.png" />
+                        </li>
+                        <li class="list_left">
+                            <input type="number" class="quantity" value="1" disabled />
+                        </li>
+                        <li class="list_left">
+                            <img class="plus" src="image/plus.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="opTotalPriceWrap">
+                    <h3 class="opTPTitle">소계</h3>
+                    <h3 class="opTP">16,000원</h3>
+                </div>
+            </div> -->
+        </div>
+        <div id="totalPrice">
+            <h2 class="tPTitle">총 주문 금액</h2>
+            <h2 class="tP">0원</h2>
+        </div>
+        <div id="goOrder">주문하기</div>
+        <div id="blankOrder"></div>
+    </div>
+</body>
+</html>

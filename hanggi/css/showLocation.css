@@ -1,0 +1,86 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+body {
+	position: relative;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+}
+#back {
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
+}
+#headerTitle {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+}
+#addrInfo {
+	padding: 16px 20px;
+	padding-bottom: 0;
+}
+.areaAddress {
+	height: 14px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.roadAddress {
+	height: 10px;
+	font-size: 10px;
+	padding-bottom: 1px;
+	color: rgb(170, 170, 170);
+}
+#detailAddr {
+	width: 100%;
+	font-size: 16px;
+	padding: 20px 0;
+	border: 0;
+}
+#decideAddr {
+	width: 100%;
+	height: 54px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border: 0;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	background-color: rgb(255, 111, 64);
+}
+
+/*지도*/
+.map_style {
+	padding: 0px;
+	height: 70%;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+#marker {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+}

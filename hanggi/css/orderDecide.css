@@ -1,0 +1,154 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+}
+#headerWrap {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background-color: white;
+}
+#blankHeader {
+	width: 100%;
+	height: 50px;
+}
+#back {
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
+}
+#headerTitle {
+	text-align: center;
+	line-height: 50px;
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+}
+
+/*배달정보*/
+#deliveryInfoWrap {
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid black;
+}
+#deliveryInfo {
+	width: 92%;
+	margin: 0 auto;
+}
+#deliveryInfo > * {
+	width: 100%;
+}
+#delInfoTitle {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+#delAddr {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+#delRoadAddr {
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+#deliveryInfo > input {
+	height: 44px;
+	font-size: 16px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+#phone {
+	margin-bottom: 20px;
+}
+
+/*대기시간 정보*/
+#waitingTimeInfoWrap {
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid black;
+}
+#waitingTimeInfo {
+	width: 92%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#wTimeInfoTitle {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#waitingTimeInfo > ul > li {
+	width: 42px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-right: 0px;
+}
+#waitingTimeInfo > ul > li.active {
+	background-color: rgb(255, 111, 64);
+}
+#waitingTimeInfo > ul > li:last-of-type {
+	border-right: 1px solid black;
+}
+
+/*결제정보*/
+#paymentInfoWrap {
+	width: 100%;
+	padding: 20px 0;
+}
+#paymentInfo {
+	width: 92%;
+	margin: 0 auto;
+}
+#payInfoTitle {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+#paymentPrice {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+#detailPrice {
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+#paymentOption {
+	width: 100%;
+	height: 60px;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 60px;
+	border: 1px solid black;
+}
+#paymentInfo > p {
+	font-size: 8px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*주문완료 버튼*/
+#payment {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	background-color: rgb(255, 111, 64);
+}

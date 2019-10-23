@@ -1,0 +1,140 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*초기화*/
+body {
+	position: relative;
+}
+#bg {
+	width: 100%;
+	display: none;
+	position: fixed;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+}
+#cancle {
+	width: 16px;
+	height: 16px;
+	top: 17px;
+	left: 17px;
+	position: absolute;
+}
+#headerTitle {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#searchAddBox {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+#searchAddBox > input {
+	width: 85%;
+	height: 35px;
+	font-size: 0.8em;
+	border: 0;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+#findCurLoc {
+	width: 36px;
+	height: 36px;
+	border: 1px solid rgb(220, 220, 220);
+}
+#findCurLoc > img {
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+	margin-top: 5px;
+	display: block;
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.conTitle {
+	margin-left: 5%;
+	font-size: 12px;
+	color: rgb(170, 170, 170);
+}
+#searchResult {
+	display: none;
+}
+.listAdd {
+	margin-top: 30px;
+}
+.searchAddress {
+	padding: 15px 0;
+}
+.recentAddress {
+	padding: 15px 0;
+	position: relative;
+}
+.address:active {
+	background-color: rgb(245, 245, 245);
+}
+.addrLocImg {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: -9px;
+	padding-left: 5%;
+}
+.addressName {
+	width: 70%;
+	font-size: 14px;
+	margin-bottom: 10px;
+	padding-left: 1.55%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.areaAddress {
+	width: 70%;
+	font-size: 10px;
+	margin-bottom: 5px;
+	padding-left: 11%;
+	color: rgb(170, 170, 170);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.roadAddress {
+	width: 70%;
+	font-size: 10px;
+	padding-left: 11%;
+	color: rgb(170, 170, 170);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.removeAddressImg {
+	width: 12px;
+	height: 12px;
+	padding: 8px;
+	margin-top: -14px;
+	position: absolute;
+	top: 50%;
+	right: 3%;
+}
+.noResult {
+	text-align: center;
+	margin-top: 200px;
+}

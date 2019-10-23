@@ -1,0 +1,30 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 99;
+}
+#back {
+	width: 16px;
+	height: 16px;
+	padding: 7px;
+	display: block;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+}
+#back > img {
+	display: block;
+	margin: 0 auto;
+}

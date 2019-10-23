@@ -1,0 +1,101 @@
+﻿.list_ul {
+	overflow: hidden;
+}
+.list_left {
+	float: left;
+}
+.list_right {
+	float: right;
+}
+
+/*메인헤더*/
+#mainHeader {
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 99;
+	border-bottom: 1px solid black;
+}
+#back {
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
+}
+#headerTitle {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#blankHeader {
+	width: 100%;
+	height: 50px;
+}
+
+body {
+	background-color: rgb(240, 240, 240);
+}
+
+/*메인섹션*/
+#mainSection {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*매칭리스트*/
+#matchingList {
+	width: 100%;
+}
+.matchingRoom {
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.matchingRoom > a {
+	width: 100%;
+	height: 100%;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	background-color: white;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 20px;
+}
+.rstrtImg {
+	width: 78px;
+	height: 78px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 32px;
+}
+.rstrtInfo {
+	width: 100%;
+	padding-left: 88px;
+	box-sizing: border-box;
+}
+.rstrtName {
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.remainTime {
+	margin-top: 5px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: rgb(180, 180, 180);
+	text-align: right;
+}
+.remainPrice {
+	margin-top: 20px;
+	margin-right: 10px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: right;
+}
